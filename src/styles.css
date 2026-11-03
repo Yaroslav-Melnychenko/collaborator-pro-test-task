@@ -11,9 +11,10 @@ body {
 
 h1 {
   font-size: 3rem;
+  border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #ffd43b;
+    border-bottom-color:#ffd43b;
   }
 }
 
