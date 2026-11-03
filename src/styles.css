@@ -34,7 +34,6 @@ button {
   cursor: pointer;
   position: relative;
   font-size: 16px;
-  display: inline-flex;
   background-color: #1e3a5f;
 
   &::after {
@@ -50,7 +49,6 @@ button {
   span {
     font-size: 14px;
     font-weight: bold;
-    margin: 0 0.25rem;
   }
 
   &:hover {
