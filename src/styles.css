@@ -68,7 +68,7 @@ button {
     content: '';
     position: absolute;
     top: 20px;
-    left: calc(50% - 20px);
+    left: calc(50% - 25px);
     width: 50px;
     height: 3px;
     background: #ffd43b;
