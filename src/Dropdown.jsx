@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useState, useRef, useCallback } from 'react';
+import { useDismiss } from './hooks/useDismiss';
 
 export default function Dropdown({ options, value, onChange }) {
   const [open, setOpen] = useState(false);
   const [up, setUp] = useState(false);
+
+  const dropdownRef = useRef(null);
+
+  const onClose = useCallback(() => setOpen(false), []);
+
+  useDismiss(dropdownRef, onClose, open);
 
   const toggle = () => {
     if (!open) setUp(window.innerHeight < 500);
@@ -10,7 +17,7 @@ export default function Dropdown({ options, value, onChange }) {
   };
 
   return (
-    <div className={"dropdown"}>
+    <div className={"dropdown"} ref={dropdownRef}>
       <button type="button" onClick={toggle}>
         {value} ▾
       </button>
