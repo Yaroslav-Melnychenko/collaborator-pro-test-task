@@ -32,7 +32,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new DefinePlugin({
-      __APP_NAME__: 'React'
+      __APP_NAME__: JSON.stringify('React')
     }),
   ],
   devServer: {
