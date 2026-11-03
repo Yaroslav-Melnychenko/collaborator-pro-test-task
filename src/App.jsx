@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { greeting } from './Greeting';
+import { greeting } from './greeting';
 import Dropdown from './Dropdown';
 
 export default function App() {
